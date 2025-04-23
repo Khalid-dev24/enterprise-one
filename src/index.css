@@ -1,68 +1,191 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300;400;500;700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+}
+
+.navbar {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.nav-links li a {
+  text-decoration: none;
+}
+
+.nav-btn {
+  background-color: red;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-size: 24px;
+  color: #333;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3B7DED, #2A5F9E, #2B70B3);
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  line-height: 56px;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 34px;
+  letter-spacing: 0.2px;
+}
+
+.hero-btn {
+  background-color: #FFD349;
+  color: #2C2C31;
+  font-size: 20px;
+  padding: 26px 58px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-image img {
+  height: 700px;
+  width: 500px;
+  margin-left: 8rem;
+}
+
+
+
+
+/* Trusted Styling */
+
+
+.trusted {
+  margin: 2rem 0;
+  
+}
+
+.trusted-header {
+  margin-bottom: 4rem;
+}
+
+.trusted h1, .trusted p {
+  text-align: center;
+  font-family: Anton, sans-serif;
+}
+
+.trusted h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #2C2C31;
+  line-height: 55px;
+}
+
+.trusted p {
+  font-size: 28px;
+  font-weight: 400;
+  color: #2C2C31;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+}
+
+
+.partner-logos-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Logos container */
+.partner-logos {
+  display: flex;
+  gap: 20px; 
+  animation: scroll-left 30s linear infinite; /* Adjust duration for speed */
+  width: max-content;
+}
+
+/* Logos */
+.partner-logos img {
+  height: 42px; /* Adjust logo size */
+  flex-shrink: 0;
+}
+
+/* Keyframes for scrolling animation */
+ @keyframes scroll-left {
+  0% {
+    transform: translateX(0);
   }
-  a:hover {
-    color: #747bff;
+  100% {
+    transform: translateX(-100%);
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+.why-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+/* StandOut Component */
+
+/* .standout-container {
+ 
+} */
+
+.standout-container h1{
+  text-align: center;
+}
+
+.reason-win {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #F9F9F9;
+  border-radius: 20px;
+  padding-top: 9px;
+  padding-bottom: 49px;
+  line-height: 40px;
+  margin-top: 2rem;
 }

@@ -1,0 +1,55 @@
+@media (max-width: 490px) {
+    /* Show hamburger menu */
+ .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #10509B;
+    background: none;
+    border: none;
+  }
+
+  /* Dropdown menu for hamburger */
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #E2E6E9;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  .hamburger-menu.open {
+    display: flex;
+  }
+
+  .hamburger-menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #E2E6E9;
+    color: #10509B;
+    text-align: center;
+  }
+
+  .hamburger-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger-menu li a {
+    color: #10509B;
+    text-decoration: none;
+  }
+
+  .hamburger-menu .contact-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 90%;
+    text-align: center;
+  }
+ 
+}
+
+
