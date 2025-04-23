@@ -8,47 +8,67 @@
   font-family: Raleway, sans-serif;
 }
 
+/* Default styles for the navbar */
 .navbar {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+}
+
+.logo svg{
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .nav-links {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
   gap: 2rem;
+  margin-right: 7rem;
 }
 
 .nav-links li a {
   text-decoration: none;
+  color: #333;
 }
 
 .nav-btn {
-  background-color: red;
-  padding: 0.5rem 1rem;
+  background-color: #FFD349;
+  color:#2C2C31;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 43px;
+  cursor: pointer;
   border-radius: 5px;
-  text-decoration: none;
+  margin-right: 5rem;
 }
 
 .socials {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
+  margin-right: 4rem;
 }
 
-.hamburger {
+.hamburger-btn {
   display: none;
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
   cursor: pointer;
-  font-size: 24px;
-  color: #333;
 }
 
+/* Responsive styles for mobile */
 
 
 /* Hero Section */
@@ -67,6 +87,10 @@
   letter-spacing: 0.5px;
   color: #FFFFFF;
   line-height: 56px;
+}
+
+.hero-text h1 span {
+  color: #FFD349;
 }
 
 .hero-text p {
@@ -188,4 +212,30 @@
   padding-bottom: 49px;
   line-height: 40px;
   margin-top: 2rem;
+}
+
+/* Testimonials Styling */
+.testimonials-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  background: linear-gradient(135deg, #3B7DED, #2A5F9E, #2B70B3);
+  height: 50vh;
+}
+
+
+
+/* Subscribe Styling */
+.subscription {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem 2rem;
+  gap: 5rem;
+}
+
+.subscription img {
+  width: 800px;
+  height: 664px;
 }
