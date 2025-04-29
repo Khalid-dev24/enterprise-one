@@ -64,6 +64,10 @@
   cursor: pointer;
 }
 
+.socials .instagram-icon {
+  margin-top: -5px;
+}
+
 .hamburger-btn {
   display: none;
   background: none;
@@ -415,61 +419,65 @@
 }
 
 
-
-
-
-
-
 /* Testimonials Styling */
-.testimonials-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0;
-  background: linear-gradient(135deg, #3B7DED, #2A5F9E, #2B70B3);
-  height: 100vh;
+ 
+.testimonial-container {
+  background: linear-gradient(#3B7DED, #2A5F9E, #2B70B3);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  height: 80vh;
 }
 
-.testimonials-content h1 {
+.testimonial-heading {
   font-family: Bebas Neue, sans-serif;
   font-size: 50px;
   font-weight: 800;
-  line-height: 55px;
-  color: #FFFFFF;
-  padding: 4rem 0;
-}
-
-.content-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonial-img svg {
   margin-bottom: 4rem;
-  
+  letter-spacing: 0.5px;
 }
 
-.lorem {
+.testimonial-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.left {
+  margin-left: 4rem;
+}
+
+.right {
+  margin-right: 4rem;
+}
+
+.testimonial-content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.testimonial-logo {
+  width: 150px;
+  margin-bottom: 4rem;
+}
+
+.testimonial-text {
   font-size: 28px;
   font-weight: 600;
-  color: #FFFFFF;
-  text-align: center;
+  margin: 0 auto 20px;
+  max-width: 600px;
 }
-
-.owner {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5rem;
-  gap: 1rem;
-}
-
-.owner-name {
-  line-height: 25px;
-}
-
-
 
 /* Subscribe Styling */
 .subscription {
@@ -654,13 +662,6 @@
   color: #2C2C31;
 }
 
-/* .address, .phone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-} */
-
 .mail {
   margin-top: 0.5rem;
 }
@@ -670,6 +671,10 @@
   flex-direction: row;
   gap: 2rem;
   margin-top: 4rem;
+}
+
+.social-media .instagram-icon {
+  margin-top: -5px;
 }
 
 
