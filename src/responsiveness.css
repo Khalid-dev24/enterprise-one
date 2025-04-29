@@ -49,18 +49,149 @@
     }
 
 
-    /* WhyUs styling */
-    .why-us {
+    /* Features Styling */
+    .features {
         display: flex;
         flex-direction: column;
         padding: 2rem 1rem;
         gap: 1rem;
     }
 
+    .features-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards p {
+        font-size: 14px;
+    }
+
+
+    /* WhyUs styling */
+    .why-us {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1rem;
+        margin-top: -5rem;
+    }
+
+    .whyus-content p {
+        font-size: 15px;
+        margin-right: 0;
+        line-height: 1.5;
+    }
+
+    .whyus-image img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Standout Styling */
+    .standout-container h1{
+        display: none;
+    }
+     
     .reason-win{
         display: flex;
         flex-direction: column;
-        padding: 2rem 4rem;
+        margin: 2rem 4rem 3rem 0;
+        padding: 3rem 3rem;
+        padding-right: 5rem;
+        
+    }
+
+    .reason-win h4 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .reason-win p {
+        font-size: 13px;
+        margin: 0;
+        line-height: 20px;
+    }
+
+
+
+
+    /* Testimonials styling */
+
+
+    /* Subscribe Styling */
+
+    .subscription img {
+        display: none;
+    }
+
+    .subscription {
+        margin: 0;
+        padding: 2rem 1rem;
+    }
+
+    .subscription h3, .subscription h2,
+    .subscription h4, .subscription input {
+        margin: 0 0 1rem 0;
+    }
+
+    .subscription h3{
+        font-size: 16px;
+        
+    }
+
+    .subscription h2 {
+        font-size: 50px;
+    }
+
+    .subscription button {
+        margin: 0;
+    }
+
+
+    /* Contactus Styling */
+
+    .contact-us {
+        margin: 0;
+    }
+    .contact-us h2, .contact-us p {
+        margin: 0;
+    }
+    .contact-us p {
+        font-size: 13px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
     }
+
+    .contact-form {
+        width: auto;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Footer Styling */
+    .footer {
+        padding: 3rem 1rem;
+    }
+
+    .footer-links li a {
+        margin-top: 1rem;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    .footer-content {
+        display: none;
+    }
+    
   }

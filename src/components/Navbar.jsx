@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Home from "./Home";
 import "../index.css";
 import "../responsiveness.css";
 
@@ -48,14 +49,14 @@ function Navbar() {
                         <li>
                         <a href="#features">Features</a>
                         </li>
+                        {/* <li>
+                        <a href="#">Pricing</a>
+                        </li> */}
                         <li>
-                        <a href="#pricing">Pricing</a>
+                        <a href="#whyus">About</a>
                         </li>
                         <li>
-                        <a href="#about">About</a>
-                        </li>
-                        <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contactus">Contact</a>
                         </li>
                   </ul>
                   <button className="nav-btn">Book a Demo</button>

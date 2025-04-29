@@ -7,10 +7,12 @@ import WhyUs from "./WhyUs.jsx";
 import StandOut from "./StandOut";
 import Testimonials from "./Testimonials.jsx";
 import Subscribe from "./Subscribe.jsx";
+import ContactUs from "./ContactUs.jsx";
+import Footer from "./Footer.jsx";
 
 function Home() {
   return (
-    <div>
+    <div id="home" >
      <Navbar />
      <Hero />
      <Trusted />
@@ -19,6 +21,8 @@ function Home() {
      <StandOut />
      <Testimonials />
      <Subscribe />
+     <ContactUs />
+     <Footer />
     </div>
   );
 };
